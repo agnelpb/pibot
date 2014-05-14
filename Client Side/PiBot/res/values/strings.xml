@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PiBot</string>
+    <string name="menu_settings">Settings</string>
+    <string name="data"> Data </string>
+    <string name="header"> PiBot Controller </string>
+    <string name="status"> Status // </string>
+  	<string name="cur_status"> Disconnected </string>  	
+  	<string name="address"> Ip address </string>
+  	<string name="sig"> Signal Strength </string>
+  	<string name="exit"> Exit </string>
+  	<string name="connect"> Connect </string>
+  	<string name="credits">Developers</string>
+  	<string name="sjcet">Developed at SJCET</string>
+  	<string name="cc"> Licensed under the Apache License, Version 2.0 </string>
+  	<string name="dev">Agnel P B \nBinto Sebastian \nAnto Toms \nAsha Anto \nArchana V Nair</string>
+</resources>

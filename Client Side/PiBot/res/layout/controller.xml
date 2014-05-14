@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/grey" >
+
+    <!-- HEADER  -->
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+        
+        <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:contentDescription="@string/data"
+        android:src="@drawable/header" />
+
+         <TextView
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_centerHorizontal="true"
+         android:layout_marginTop="8dp"
+         android:textSize="16sp"
+         android:textColor="@color/blue"
+         android:textAllCaps="true"
+         android:text="@string/header" />
+          
+    </RelativeLayout>
+
+    
+    <!-- BODY -->
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+         
+      	<!-- STATUS SIDE -->  
+       
+         <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+             <!-- Status Text and image -->
+        
+	         <TextView
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_marginLeft="8dp"
+	         android:textSize="12sp"
+	         android:textColor="@color/blue"
+	         android:textAllCaps="true"
+	         android:textStyle="bold"
+	         android:text="@string/status" />
+
+	      
+	         
+	         <ImageView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:src="@drawable/deco"
+             android:contentDescription="@string/data" />
+	         
+	         
+	         
+	         <TextView
+	         android:id="@+id/current_status"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_marginLeft="8dp"
+	         android:layout_marginTop="10dp"
+	         android:textSize="12sp"
+	         android:textColor="@color/white"
+	         android:textAllCaps="true"
+	         android:text="@string/cur_status" />
+	         
+	         
+	         <!-- IP Address -->
+	         
+	         <TextView
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_marginLeft="8dp"
+	         android:layout_marginTop="15dp"
+	         android:textSize="14sp"
+	         android:textColor="@color/blue"
+	         android:textAllCaps="true"
+	         android:text="@string/address" />
+	         
+	         
+	         <TextView
+	         android:id="@+id/ip_address"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_marginLeft="8dp"
+	         android:textSize="18sp"
+	         android:textColor="@color/white"
+	         android:textAllCaps="true"
+	         android:text="@string/data" />
+	         
+	         
+	         <!-- Signal Strength  -->
+	         
+	         <TextView
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_marginLeft="8dp"
+	         android:layout_marginTop="15dp"
+	         android:textSize="14sp"
+	         android:textColor="@color/blue"
+	         android:textAllCaps="true"
+	         android:text="@string/sig" />
+	         
+	         <TextView
+	         android:id="@+id/signal_strength"
+	         android:layout_width="match_parent"
+	         android:layout_height="wrap_content"
+	         android:layout_marginLeft="8dp"
+	         android:textSize="18sp"
+	         android:textColor="@color/white"
+	         android:textAllCaps="true"
+	         android:text="@string/data" />
+	          
+        </LinearLayout>
+       
+         
+        <!-- Controllers -->
+         
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+          <ImageButton
+              android:id="@+id/button_right"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_marginTop="70dp"
+              android:layout_marginRight="50dp"
+              android:layout_alignParentRight="true"
+              android:layout_alignParentTop="true"              
+              android:contentDescription="@string/data"
+              android:background="@color/grey"
+              android:src="@drawable/right" />
+
+          <ImageButton
+              android:id="@+id/button_down"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/button_right"
+              android:layout_toLeftOf="@+id/button_right"
+              android:background="@color/grey"
+              android:contentDescription="@string/data"
+              android:src="@drawable/down" />
+
+          <ImageButton
+              android:id="@+id/button_left"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_alignBottom="@+id/button_right"
+              android:layout_toLeftOf="@+id/button_down"
+              android:background="@color/grey"
+              android:contentDescription="@string/data"
+              android:src="@drawable/left" />
+
+          <ImageButton
+              android:id="@+id/button_up"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:layout_above="@+id/button_left"
+              android:layout_toLeftOf="@+id/button_right"
+              android:background="@color/grey"
+              android:contentDescription="@string/data"
+              android:src="@drawable/up" />
+            
+    	</RelativeLayout> 
+         
+    </LinearLayout>
+
+    <!-- Buttons -->
+    
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        >
+
+        <!-- Exit Button -->
+
+        <ImageButton
+            android:id="@+id/exit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="14dp"
+            android:contentDescription="@string/data"
+            android:background="@color/grey"
+            android:src="@drawable/button" />
+        
+        <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/exit_button"
+             android:layout_alignBottom="@+id/exit_button"
+             android:layout_marginLeft="35dp"
+             android:layout_marginBottom="8dp"
+             android:textSize="12sp"
+             android:textStyle="bold"
+             android:text="@string/exit" />
+        
+        
+       
+        
+        <!-- Credits Button -->
+       
+         <ImageButton
+            android:id="@+id/credits"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="8dp"
+            android:contentDescription="@string/data"
+            android:background="@color/grey"
+            android:src="@drawable/credits" />
+         
+        
+    </RelativeLayout>
+
+</LinearLayout>
